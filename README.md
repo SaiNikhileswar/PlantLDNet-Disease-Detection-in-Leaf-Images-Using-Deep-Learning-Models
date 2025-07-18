@@ -17,31 +17,31 @@ The PlantLDNet model leverages a custom CNN architecture comprising six 2D convo
 - 5×5 kernel
 - 128 feature maps
 - **Hierarchical Convolution**
-- **Two successive 5×5 convolutions with 128 filters each*
-- Pooling and Dimensionality Reduction
-- **Three max-pooling layers, each with a 3×3 kernel, to progressively reduce spatial dimensions**
-- Batch Normalization & Dropout
-- **30% dropout encourages sparsity and robustness, decorrelates learned weights**
-- Output
-- **Feature map size reduced to 13×13×64**
+- Two successive 5×5 convolutions with 128 filters each
+- **Pooling and Dimensionality Reduction**
+- Three max-pooling layers, each with a 3×3 kernel
+- **Batch Normalization & Dropout**
+- 30% dropout encourages sparsity and robustness, decorrelates learned weights
+- **Output**
+- Feature map size reduced to 13×13×64
 
 ### 2. Cluster Layer Two (CL_2)
-- Convolutional Pair
-- **Two convolutional layers, each with 64 filters of size 5×5**
-- Pooling
-- **Two consecutive max-pooling layers, 2×2 each, reduce features to 3×3×64**
+- **Convolutional Pair**
+- Two convolutional layers, each with 64 filters of size 5×5
+- **Pooling**
+- Two consecutive max-pooling layers, 2×2 each, reduce features to 3×3×64
 
 ### 3. Cluster Layer Three (CL_3)
-- Final Convolution
-- **Single convolutional layer with 32 filters of 3×3 kernel size**
-- Pooling
-- **Max-pooling (2×2) reduces output to 1×1×32**
+- **Final Convolution**
+- Single convolutional layer with 32 filters of 3×3 kernel size
+- **Pooling**
+- Max-pooling (2×2) reduces output to 1×1×32
 
 ### 4. Fully Connected (Feed-Forward) Layers
-- First Dense Layer
-- **128 neurons, ReLU activation**
-- Output Layer
-- **3 neurons, Softmax activation**
+- **First Dense Layer**
+- 128 neurons, ReLU activation
+- **Output Layer**
+- 3 neurons, Softmax activation
 
 
 ## Dataset
