@@ -13,7 +13,7 @@ PlantLDNet is a purpose-built convolutional neural network (CNN) tailored for th
 The PlantLDNet model leverages a custom CNN architecture comprising six 2D convolutional layers, four max-pooling layers, and ReLU activation functions. The architecture harnesses batch normalization and selective feature loss at key stages, promoting the extraction of refined and discriminative features, leading to improved leaf disease classification performance. Attention is given to stable training and robust generalization.
 
 ### 1. Cluster Layer One (CL_1)
--Initial Convolution
+- Initial Convolution
 - **5×5 kernel**
 - **128 feature maps**
 - Hierarchical Convolution
